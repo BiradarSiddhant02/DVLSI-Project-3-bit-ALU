@@ -1,0 +1,22 @@
+Circuit: * D:\PES\Sem 4\Digital VLSI design\DVLSI-Project-3-bit-ALU\Siddharth\Draft2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Apr 08 01:16:21 2023
+Total elapsed time: 0.117 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 6067
+traniter = 6039
+tranpoints = 2317
+accept = 2076
+rejected = 241
+matrix size = 46
+fillins = 0
+solver = Normal
+Thread vector: 5.4/3.8[2] 2.9/2.3[2] 0.7/0.8[1] 0.5/0.9[1]  2592/500
+Matrix Compiler1: 2.80 KB object code size  0.8/0.3/[0.2]
+Matrix Compiler2: off  [0.4]/0.6/0.5
+

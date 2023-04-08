@@ -1,0 +1,23 @@
+Circuit: * D:\PES\Sem 4\Digital VLSI design\DVLSI-Project-3-bit-ALU\Siddharth\Draft3.asc
+
+WARNING: Less than two connections to node X1:VDD.  This node is used by V:X1:1.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Apr 08 01:39:55 2023
+Total elapsed time: 0.143 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4522
+traniter = 4510
+tranpoints = 1998
+accept = 1834
+rejected = 164
+matrix size = 36
+fillins = 2
+solver = Normal
+Thread vector: 5.0/3.6[2] 2.5/1.7[2] 0.6/0.7[1] 0.1/0.4[1]  2592/500
+Matrix Compiler1: 2.54 KB object code size  0.7/0.3/[0.2]
+Matrix Compiler2: 3.38 KB object code size  0.3/0.4/[0.3]
+

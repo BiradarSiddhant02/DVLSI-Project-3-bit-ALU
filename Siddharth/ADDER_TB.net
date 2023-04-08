@@ -1,0 +1,49 @@
+* D:\PES\Sem 4\Digital VLSI design\DVLSI-Project-3-bit-ALU\Siddharth\ADDER_TB.asc
+XX1 A B C Cout Sum adder
+V1 A 0 PULSE(5 0 0 1n 1n 1m 2m)
+V2 B 0 PULSE(5 0 0 1n 1n 2m 4m)
+V3 C 0 PULSE(5 0 0 1n 1n 4m 8m)
+
+* block symbol definitions
+.subckt adder A B Cin Cout Sum
+M1 Vdd A N002 Vdd PMOS
+M2 Vdd B N002 Vdd PMOS
+M3 Vdd B N003 Vdd PMOS
+M4 N003 A N006 N003 PMOS
+M5 N002 Cin N006 N002 PMOS
+M6 Vdd A N004 Vdd PMOS
+M7 Vdd B N004 Vdd PMOS
+M8 Vdd Cin N004 Vdd PMOS
+M9 Vdd Cin N001 Vdd PMOS
+M10 N005 A N007 Vdd PMOS
+M11 N007 A N011 N007 PMOS
+M12 N004 N006 N007 N004 PMOS
+M13 N006 Cin N010 N010 NMOS
+M14 N006 A N009 N009 NMOS
+M15 N010 A 0 0 NMOS
+M16 N010 B 0 0 NMOS
+M17 N009 B 0 0 NMOS
+M18 N007 N006 N008 N008 NMOS
+M19 N008 A 0 0 NMOS
+M20 N008 B 0 0 NMOS
+M21 N008 Cin 0 0 NMOS
+M22 N012 Cin 0 0 NMOS
+M23 N001 B N005 Vdd PMOS
+M24 N011 B N012 N007 PMOS
+V1 Vdd 0 5
+XX1 N006 Cout invert
+XX2 N007 Sum invert
+.ends adder
+
+.subckt invert A A_
+M2 A_ A 0 0 NMOS
+M3 N001 A A_ N001 PMOS
+V1 N001 0 5
+.ends invert
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Administrator\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 8m 0
+.backanno
+.end
